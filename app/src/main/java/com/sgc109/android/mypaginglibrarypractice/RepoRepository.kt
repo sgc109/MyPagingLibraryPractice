@@ -1,6 +1,5 @@
 package com.sgc109.android.mypaginglibrarypractice
 
-import android.arch.lifecycle.LiveData
 import android.arch.paging.DataSource
 import android.arch.paging.PagedList
 import android.arch.paging.RxPagedListBuilder

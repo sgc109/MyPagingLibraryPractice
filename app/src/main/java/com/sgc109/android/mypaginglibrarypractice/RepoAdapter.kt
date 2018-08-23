@@ -14,7 +14,7 @@ class RepoAdapter : PagedListAdapter<Repo, RepoViewHolder>(diffCallback) {
     }
 
     companion object {
-        val diffCallback = object: DiffUtil.ItemCallback<Repo>() {
+        val diffCallback = object : DiffUtil.ItemCallback<Repo>() {
             override fun areItemsTheSame(oldItem: Repo?, newItem: Repo?): Boolean {
                 return oldItem?.id == newItem?.id
             }

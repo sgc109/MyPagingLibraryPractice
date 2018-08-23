@@ -20,5 +20,5 @@ interface RepoApi {
     }
 
     @GET("/search/repositories?q=e")
-    fun getRepos(@Query("page")pageNo: Int, @Query("per_page")itemCntPerPage: Int)
+    fun getRepos(@Query("page") pageNo: Int, @Query("per_page") itemCntPerPage: Int)
 }
