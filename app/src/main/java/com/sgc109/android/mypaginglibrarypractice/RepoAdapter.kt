@@ -16,11 +16,11 @@ class RepoAdapter : PagedListAdapter<Repo, RepoViewHolder>(diffCallback) {
     companion object {
         val diffCallback = object: DiffUtil.ItemCallback<Repo>() {
             override fun areItemsTheSame(oldItem: Repo?, newItem: Repo?): Boolean {
-                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+                return oldItem?.id == newItem?.id
             }
 
             override fun areContentsTheSame(oldItem: Repo?, newItem: Repo?): Boolean {
-                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+                return oldItem?.id == newItem?.id && oldItem?.title == newItem?.title
             }
 
         }
