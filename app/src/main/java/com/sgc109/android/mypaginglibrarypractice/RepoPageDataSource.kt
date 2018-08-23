@@ -2,7 +2,7 @@ package com.sgc109.android.mypaginglibrarypractice
 
 import android.arch.paging.PageKeyedDataSource
 
-class ReposDataSource: PageKeyedDataSource<String, Repo>() {
+class RepoPageDataSource: PageKeyedDataSource<String, Repo>() {
     override fun loadInitial(params: LoadInitialParams<String>, callback: LoadInitialCallback<String, Repo>) {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
